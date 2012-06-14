@@ -1,4 +1,4 @@
-cinderella-io.github.com
-========================
+cinderella.io
+=============
 
 Github Pages for Cinderella.io
