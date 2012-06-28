@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<title>{{ page.title }}</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js">
+	</script>
+	<script type="text/javascript"> <!-- search -->
+	$(function() {
+		$('#simple_google')
+			.submit(function() {
+				$('input[name="q"]').val("site:" + document.location.hostname + " " + $('input[name="cinderella-search"]').val());
+			return true;
+			});
+		$('input[name="cinderella-search"]').focus(function() {
+				if ($(this).val() === $(this).attr('placeholder')) {
+					$(this).val('');
+				}
+			})
+			.blur(function() {
+				if ($(this).val() === '') {
+					$(this).val($(this).attr('placeholder'));
+				}
+			})
+			.blur();
+    });
+	</script>
+	
+	<!-- **** layout stylesheet **** -->
+	<link rel="stylesheet" type="text/css" href="{{ site.url }}/style/style.css" />
+	
+	<!-- **** GA for cinderella.io **** -->
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-32655967-1']);
+	  _gaq.push(['_setDomainName', 'cinderella.io']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+</head>
+
+<body>
+<ul id="shortcuts" title="Accessibility shortcuts menu">
+	<li><a href="#maincontent">Skip to main content</a></li>
+</ul>
+   
+
+<div id="container">
+    <div id="header">
+        <div id="identity">
+            <a href="http://www.cinderella.io/" rel="home">Cinderella</a>
+        </div>
+        <ul id="quicklinks">
+            <li><a href="http://www.cloudsoftcorp.com">Contact</a></li>
+        </ul>
+        <div id="menubar">  
+
+		{% include topbar.html %}                    
+
+            <form method="get" id="simple_google" class="searchform" action="http://www.google.com/search" method="get">
+                <input type="text" class="searchinput" name="cinderella-search" placeholder="Search" />
+                <input type="hidden" name="q" value="" />
+            </form>
+            
+        </div>
+                
+    </div><!--header-->
+    
+    <div id="contentcontainer">
+    
+        <div id="maincontent">
+
+	{% include breadcrumbs.html %}
+
+	<h1 id="header_title">{{ page.title }}</h1>
+    
+	{{ content }}
+
+    </div><!--maincontent-->
+        
+	<div id="sidebar">
+      
+	{% include sidebar.html %}
+
+    </div>
+
+    </div><!--contentcontainer-->  
+        
+    <div id="footer">
+        <p id="copyright">
+            <b>Cinderella is distributed under License.</b><br/>
+            &copy; 2012 Cloudsoft Corporation.
+        </p>
+    </div><!--footer -->
+
+</div><!--container-->
+
+</body>
+</html>
