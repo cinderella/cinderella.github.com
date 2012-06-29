@@ -28,7 +28,7 @@ a:hover {colour: #73b8e2; text-decoration: underline;}
 #container {width: 980px; padding: 0; margin: 0 auto;}
 #contentcontainer {clear: both; width: 980px; overflow: hidden;}
 #maincontent {width: 710px; float: left; padding: 10px 0px 25px 10px; background-color: #ffffff;}
-#sidebar {width: 155px; float: right; padding: 40px 5px 20px 0;}
+#sidebar {width: 155px; float: right; padding: 6em 5px 20px 0;}
 
 /* HEADER */
 #header {padding: 0;}
@@ -93,7 +93,6 @@ th:last-child, td:last-child {border-right: 0;}
 #sidebar {font-size: 13px;}
 #sidebar h2 {text-transform: uppercase; font-size: 12px; color: #111111; margin: 15px 0 5px 0;}
 #sidebar ul {list-style: none; margin: 0; padding: 0;}
-#sidebar li {margin: 0 0 5px; padding: 0;}
 #sidebar li a {text-decoration: none;}
 #sidebar li a:hover {text-decoration: underline;}
 
@@ -104,6 +103,9 @@ th:last-child, td:last-child {border-right: 0;}
 #footer p#linklove {float: left; text-align: left; color: #b6b6b6;}
 #footer p#linklove a {color: #b6b6b6; text-decoration: none;}
 #footer p#linklove a:hover {text-decoration: underline;}
+#footer p#copyright a {color: #b6b6b6;}
+#footer p#copyright a:hover {color: #579bcc;text-decoration: none;}
+
 
 /* CODE */
 pre {

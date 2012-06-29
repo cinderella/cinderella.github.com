@@ -6,8 +6,13 @@
 	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js">
 	</script>
-	<script type="text/javascript"> <!-- search -->
+	<script type="text/javascript">
 	$(function() {
+		<!-- search -->
+		$('#nav-tree').treelist({
+			activeSelector: 'a[href="' + window.location.pathname +'"]'
+		});
+		console.log('a[href="' + window.location.pathname +'"]');
 		$('#simple_google')
 			.submit(function() {
 				$('input[name="q"]').val("site:" + document.location.hostname + " " + $('input[name="cinderella-search"]').val());
@@ -29,6 +34,13 @@
 	
 	<!-- **** layout stylesheet **** -->
 	<link rel="stylesheet" type="text/css" href="{{ site.url }}/style/style.css" />
+	
+	<!-- **** toc stylesheet **** -->
+	<link rel="stylesheet" type="text/css" href="{{ site.url }}/style/toc.css" />
+	
+	<!-- **** toc JS **** -->
+	<script type="text/javascript" src="{{ site.url }}/js/toc.js">
+	</script>
 	
 	<!-- **** GA for cinderella.io **** -->
 	<script type="text/javascript">
@@ -78,30 +90,40 @@
     
         <div id="maincontent">
 
-	{% include breadcrumbs.html %}
+		{% include breadcrumbs.html %}
 
-	<h1 id="header_title">{{ page.title }}</h1>
-    
-	{{ content }}
-
-    </div><!--maincontent-->
+		<h1 id="header_title">{{ page.title }}</h1>
+		
+		{{ content }}
+	
+		</div><!--maincontent-->
         
-	<div id="sidebar">
-      
-	{% include sidebar.html %}
-
-    </div>
+		<div id="sidebar">
+		  
+		{% include sidebar.html %}
+	
+		</div>
 
     </div><!--contentcontainer-->  
         
     <div id="footer">
         <p id="copyright">
-            <b>Cinderella is distributed under License.</b><br/>
-            &copy; 2012 Cloudsoft Corporation.
+            <b><a href="{{site.url}}/license/">Cinderella is distributed under the Apache License v2.0.</a></b><br/>
+            &copy; 2012 <a href="http://www.cloudsoftcorp.com/">Cloudsoft Corporation</a>.
         </p>
     </div><!--footer -->
 
 </div><!--container-->
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $('#nav').treelist({
+      	activeSelector: 'a[href="' + window.location.pathname + '.html"]'
+      });
+     });    
+  </script>
+  
+
 
 </body>
 </html>

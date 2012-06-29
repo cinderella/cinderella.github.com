@@ -1,0 +1,38 @@
+ul.treelist .treelist-control,ol.treelist .treelist-control {
+	position:relative;
+	display:inline-block;
+	margin-left:-1.75em;
+	cursor:pointer;
+	text-decoration:none;
+}
+ul.treelist li{
+	list-style-image:none;
+	list-style-type:none;
+	margin-left:0.8em;
+	padding: 0.2em 0;
+}
+.treelist-control {
+	cursor:pointer;
+	display:inline;
+	position:relative;
+	padding: 0 0.5em;
+	margin-left:-1em;
+}
+
+
+.treelist-control:hover {
+	background-color:transparent;
+}
+.treelist-title{
+	padding-left:16px;
+}
+.treelist-control-title {
+	cursor:pointer;
+}
+#nav{
+	color: #333;
+}
+#nav a{
+	text-decoration:none;
+	color: #333;
+}
