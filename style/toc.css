@@ -9,8 +9,9 @@ ul.treelist li{
 	list-style-image:none;
 	list-style-type:none;
 	margin-left:0.8em;
-	padding: 0.2em 0;
+	padding-top: 0.6em;
 }
+
 .treelist-control {
 	cursor:pointer;
 	display:inline;
@@ -18,7 +19,6 @@ ul.treelist li{
 	padding: 0 0.5em;
 	margin-left:-1em;
 }
-
 
 .treelist-control:hover {
 	background-color:transparent;
