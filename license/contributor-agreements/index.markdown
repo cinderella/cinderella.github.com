@@ -25,3 +25,4 @@ the Corporate Contributor License Agreement and update this as there are changes
 These actions can also be done online:
 
 * [Sign the Corporate CLA](cla-corporate.html)
+* [Update your Corporate CLA](update-corporate.html)
