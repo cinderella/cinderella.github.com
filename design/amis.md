@@ -1,4 +1,7 @@
-# AMIs
+---
+layout: cinderella-default
+title: AMIs
+---
 
 ## Overview
 

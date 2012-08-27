@@ -1,4 +1,7 @@
-# Key Pairs
+---
+layout: cinderella-default
+title: Key Pairs
+---
 
 ## Overview
 

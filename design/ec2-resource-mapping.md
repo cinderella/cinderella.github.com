@@ -1,4 +1,7 @@
-# EC2 Resource Mapping
+---
+layout: cinderella-default
+title: EC2 Resource Mapping
+---
 
 ## Overview
 

@@ -1,4 +1,7 @@
-# Availability Zones and Regions
+---
+layout: cinderella-default
+title: Availability Zones and Regions
+---
 
 ## Overview
 

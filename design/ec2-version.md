@@ -1,4 +1,7 @@
-# EC2 Version
+---
+layout: cinderella-default
+title: EC2 Version
+---
 
 ## Overview
 
