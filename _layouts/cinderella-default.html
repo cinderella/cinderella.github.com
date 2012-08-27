@@ -94,7 +94,7 @@
 
 		{% include breadcrumbs.html %}
 
-		<h1 id="header_title">{{ page.title }}</h1>
+		<h1 id="header_title">{% if page.h1 %}{{ page.h1 }}{% else %}{{ page.title }}{% endif %}</h1>
 		
 		{{ content }}
 	

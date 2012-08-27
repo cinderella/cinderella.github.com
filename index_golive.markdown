@@ -1,10 +1,9 @@
 ---
 layout: cinderella-default
 title: Cinderella
+h1: Cinderella?
 meta_description: Open source EC2 API for vClouds.
 ---
-
-## Cinderella?
 
 Cinderella is an open source EC2 API for vCloud.
 
