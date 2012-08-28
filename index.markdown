@@ -1,18 +1,16 @@
 ---
 layout: cinderella-default
 title: Cinderella
-h1: Cinderella?
+h1: The Cinderella Project
 meta_description: Open source EC2 API for vClouds.
 ---
 
-Cinderella is an open source EC2 API for vCloud.
+## What is Cinderella?
 
-It allows you to use EC2 compatible tools with public or private vClouds.
+The goal is to provide a REST/Query-based API for vCloud that is compatible with Amazon EC2 and S3 services. This will allow tools like [Euca2ools](https://projects.eucalyptus.com/redmine/projects/euca2ools) to interact with public or private vCloud environments by taking advantage of vCloud Director 5.1 enhancements and the [vBlob](https://github.com/cloudfoundry/vblob) project from CloudFoundry team.
 
-## Download
+## Getting Involved
 
-The Cinderella source is available to fork and download from [Cinderella's GitHub repo](https://github.com/cinderella/cinderella).
+The project is at a formative stage. This site hosts our design docs and instructions for getting started. [GitHub](https://github.com/cinderella/cinderella) hosts our early work outs. Your contribution will be welcomed, so don't hesitate, [get involved]({{site.url}}/contribute/).
 
-## Contributing
 
-Want to help make Cinderella more feature-full, useful or beautiful? [Get started!]({{site.url}}/contribute/)
