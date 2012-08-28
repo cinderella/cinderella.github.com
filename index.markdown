@@ -11,6 +11,6 @@ The goal is to provide a REST/Query-based API for vCloud that is compatible with
 
 ## Getting Involved
 
-The project is at a formative stage. This site hosts our design docs and instructions for getting started. [GitHub](https://github.com/cinderella/cinderella) hosts our early work outs. Your contribution will be welcomed, so don't hesitate, [get involved]({{site.url}}/contribute/).
+The project is at a formative stage. This site hosts our design docs and instructions for getting started. [GitHub](https://github.com/cinderella/cinderella) hosts our early work outs. Community participation is critical to the success of Cinderella, so don't hesitate to [get involved]({{site.url}}/contribute/).
 
 
