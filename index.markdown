@@ -2,7 +2,7 @@
 layout: cinderella-default
 title: Cinderella
 h1: The Cinderella Project
-meta_description: Open source EC2 API for vClouds.
+meta_description: Open source REST API for vCloud, compatible with AWS EC2 and S3.
 ---
 
 ## What is Cinderella?
