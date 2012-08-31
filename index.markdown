@@ -16,7 +16,7 @@ The project is at a formative stage. This site hosts our design docs and instruc
 
 ## How to Run Amazon Web Services Workloads on Your vCloud
 
-Mathew Lodge (VP, Cloud Services, VMware) and Adrian Cole (Founder, jclouds.org) present at VMworld 2012.
+Mathew Lodge (VP, Cloud Services, VMware) and Adrian Cole (Founder, jclouds.org) presented at VMworld 2012.
 
 <iframe src="http://www.slideshare.net/slideshow/embed_code/14127409" width="600" height="490" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen> </iframe>
 
